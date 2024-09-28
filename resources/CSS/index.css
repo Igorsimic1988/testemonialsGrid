@@ -1,0 +1,171 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+  }
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: 'Barlow Semi Condensed';
+  }
+  
+  .white {
+    color: #ffffff;
+  }
+  
+  .black {
+    color: #48556A;
+  }
+
+  .gray {
+    color: #CFCFCF;
+  }
+
+  .name {
+   font-size: calc(13 / 16 * 1rem);
+   font-weight: 500;
+   line-height: calc(13 / 16 * 1rem);
+   margin-bottom: 4px;
+  }
+
+  .position {
+    font-size: calc(11 / 16 * 1rem);
+    font-weight: 500;
+    line-height: calc(11 / 16 * 1rem);
+    opacity: 50%;
+   }
+
+   .quote {
+    font-size: calc(20 / 16 * 1rem);
+    font-weight: 500;
+    line-height: auto;
+    margin-bottom: 40px;
+   }
+
+   .text {
+    font-size: calc(13 / 16 * 1rem);
+    font-weight: 500;
+    line-height: calc(18 / 16 * 1rem);
+    opacity: 70%;
+   }
+
+   img {
+    margin-right: 17px;
+   }
+
+
+  div.section:nth-child(1) {
+    background-color: #733FC8;
+    background-image: url(../../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 24px;
+  }
+  div.section:nth-child(2) {
+    background-color: #48556A;
+  }
+  div.section:nth-child(3) {
+    background-color: #ffffff;
+  }
+  div.section:nth-child(4) {
+    background-color: #19202D;
+  }
+  div.section:nth-child(5) {
+    background-color: #ffffff;
+  }
+
+.circle-one {
+    box-shadow: 0 0 0 2px #A775F1;
+  }
+
+  .circle-two {
+    box-shadow: 0 0 0 2px #733FC8;
+  }
+
+  body {
+    padding: 71px 24px ;
+    background-color: #ECF2F8;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
+  .section {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 26px 32px 32px 32px;
+  }
+
+  .name-card {
+   width: max-content;
+   display: flex;
+   align-items: center;
+   margin-bottom: 18px;
+  }
+  
+  @media (min-width: 1000px) {
+
+ body {
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: 'daniel daniel jonathan kira'
+                         'jeanette patrick patrick kira'
+                         ;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.daniel {
+    grid-area: daniel;
+
+}
+
+.jonathan {
+    grid-area: jonathan;
+}
+
+.kira {
+    grid-area: kira;
+}
+
+.jeanette {
+    grid-area: jeanette;
+}
+
+.patrick {
+    grid-area: patrick;
+}
+
+.section {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 26px 32px 42px 32px;
+  }
+
+  .quote {
+    margin-bottom: 16px;
+   }
+
+
+  }
+
+
+
+
