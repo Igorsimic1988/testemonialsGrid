@@ -163,9 +163,11 @@ img, picture, video, canvas, svg {
     margin-bottom: 16px;
    }
 
+   div.section:nth-child(1) {
+    background-position: top right 80px;
 
   }
 
 
-
+  }
 
